@@ -1,0 +1,45 @@
+{% extends "baseadmin.html" %}
+
+{% block content %}
+
+
+
+
+
+<body>
+  <div class="row">
+    <div class="col-md-12 ">
+      <div class="container mt-5 pl-5">
+        <h2 class="text-center  font-weight-bold" style="color: #632343;">Target</h2>
+        <table class="table mt-5">
+          <tr>
+
+            <th scope="col" style="color: #632343;">Employee name </th>
+            <th scope="col" style="color: #632343;">Ecode</th>
+            <th scope="col" style="color: #632343;">branch</th>
+            <th scope="col" style="color: #632343;">Target</th>
+          </tr>
+          {% for i in val%}
+          <tr>
+            <td>&nbsp;{{i[1]}}</td>
+            <td>&nbsp;{{i[2]}}</td>
+            <td>&nbsp;{{i[3]}}</td>
+            <td>&nbsp;{{i[6]}}</td>
+
+            <td>
+              <a href="/updateEmployeestarget?id={{i[5]}}" class="btn " style="background-color:#632343;"> <span
+                  style="color: white;">Update Target </span></button>
+            </td>
+
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+{% endblock%}

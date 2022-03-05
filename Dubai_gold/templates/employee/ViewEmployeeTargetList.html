@@ -1,0 +1,40 @@
+
+{% extends "base.html" %}
+ {% block content %}
+
+<body>
+
+  <div class="row">
+    <div class="col-md-6 m-auto">
+      <div class="container mt-5 pl-5">
+        <h2 class="text-center font-weight-bold" style="color: #632343;">Employee Target</h2>
+
+        <ul class="list-group mt-5 pt-5">
+
+          <li class="list-group-item"> <span class="text-center font-weight-bold" style="color: #632343;">Employee Name
+              : </span> {{val[1]}}</li>
+          <li class="list-group-item"><span class="text-center font-weight-bold" style="color: #632343;">Employee Ecode
+              : </span>{{val[2]}}</li>
+          <li class="list-group-item"><span class="text-center font-weight-bold" style="color: #632343;">Employee branch
+              :</span> {{val[3]}}</li>
+          <li class="list-group-item"><span class="text-center font-weight-bold" style="color: #632343;">Employee Target
+              : </span>{{val[6]}}</li>
+
+        </ul>
+
+      </div>
+    </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+
+ {% endblock %}
